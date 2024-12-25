@@ -1,0 +1,696 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='TugasAkhir_17350593412180' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Wholesale customers data (Wholesale customers data)' inline='true' name='federated.156c7eq0v6q7gm179ef190963y9w' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Wholesale customers data' name='excel-direct.0f8aoni0k5obht1fec9cm1i0onwq'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/ASUS/Downloads/Wholesale customers data.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0f8aoni0k5obht1fec9cm1i0onwq' name='Wholesale customers data' table='[&apos;Wholesale customers data$&apos;]' type='table'>
+          <columns gridOrigin='A1:H441:no:A1:H441:0' header='yes' outcome='6'>
+            <column datatype='integer' name='Channel' ordinal='0' />
+            <column datatype='integer' name='Region' ordinal='1' />
+            <column datatype='integer' name='Fresh' ordinal='2' />
+            <column datatype='integer' name='Milk' ordinal='3' />
+            <column datatype='integer' name='Grocery' ordinal='4' />
+            <column datatype='integer' name='Frozen' ordinal='5' />
+            <column datatype='integer' name='Detergents_Paper' ordinal='6' />
+            <column datatype='integer' name='Delicassen' ordinal='7' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Wholesale customers data]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:H441:no:A1:H441:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Channel</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Channel]</local-name>
+            <parent-name>[Wholesale customers data]</parent-name>
+            <remote-alias>Channel</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Wholesale customers data_0428F17670C743DAB3D8609A0A8B0103]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[Wholesale customers data]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Wholesale customers data_0428F17670C743DAB3D8609A0A8B0103]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fresh</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Fresh]</local-name>
+            <parent-name>[Wholesale customers data]</parent-name>
+            <remote-alias>Fresh</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Wholesale customers data_0428F17670C743DAB3D8609A0A8B0103]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Milk</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Milk]</local-name>
+            <parent-name>[Wholesale customers data]</parent-name>
+            <remote-alias>Milk</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Wholesale customers data_0428F17670C743DAB3D8609A0A8B0103]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Grocery</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Grocery]</local-name>
+            <parent-name>[Wholesale customers data]</parent-name>
+            <remote-alias>Grocery</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Wholesale customers data_0428F17670C743DAB3D8609A0A8B0103]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Frozen</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Frozen]</local-name>
+            <parent-name>[Wholesale customers data]</parent-name>
+            <remote-alias>Frozen</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Wholesale customers data_0428F17670C743DAB3D8609A0A8B0103]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Detergents_Paper</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Detergents_Paper]</local-name>
+            <parent-name>[Wholesale customers data]</parent-name>
+            <remote-alias>Detergents_Paper</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Wholesale customers data_0428F17670C743DAB3D8609A0A8B0103]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Delicassen</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Delicassen]</local-name>
+            <parent-name>[Wholesale customers data]</parent-name>
+            <remote-alias>Delicassen</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Wholesale customers data_0428F17670C743DAB3D8609A0A8B0103]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Total Spend' datatype='integer' name='[Calculation_107523469795966976]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Fresh] + [Milk] + [Grocery] + [Frozen] + [Detergents_Paper] + [Delicassen]' />
+      </column>
+      <column aggregation='Sum' caption='Channel (copy)' datatype='integer' name='[Channel (copy)_107523469796573186]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='[Channel]' />
+      </column>
+      <column caption='Detergents Paper' datatype='integer' name='[Detergents_Paper]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Fresh]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Frozen]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Grocery]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Milk]' role='measure' type='quantitative' />
+      <column aggregation='Sum' caption='Region (copy)' datatype='integer' name='[Region (copy)_107523469796327425]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='[Region]' />
+      </column>
+      <column caption='Wholesale customers data' datatype='table' name='[__tableau_internal_object_id__].[Wholesale customers data_0428F17670C743DAB3D8609A0A8B0103]' role='measure' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[Wholesale customers data_0428F17670C743DAB3D8609A0A8B0103]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Wholesale customers data_0428F17670C743DAB3D8609A0A8B0103:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Detergents_Paper]' derivation='Sum' name='[sum:Detergents_Paper:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Fresh]' derivation='Sum' name='[sum:Fresh:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Frozen]' derivation='Sum' name='[sum:Frozen:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Grocery]' derivation='Sum' name='[sum:Grocery:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Milk]' derivation='Sum' name='[sum:Milk:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/ASUS/AppData/Local/Temp/TableauTemp/#TableauTemp_06ywwh512inba213tgmfr1w351qf.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='12/24/2024 04:34:33 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Channel</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Channel]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Channel</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Wholesale customers data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Wholesale customers data_0428F17670C743DAB3D8609A0A8B0103]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Region</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Region]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Region</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Wholesale customers data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Wholesale customers data_0428F17670C743DAB3D8609A0A8B0103]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Fresh</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Fresh]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Fresh</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Wholesale customers data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>433</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Wholesale customers data_0428F17670C743DAB3D8609A0A8B0103]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Milk</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Milk]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Milk</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Wholesale customers data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>421</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Wholesale customers data_0428F17670C743DAB3D8609A0A8B0103]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Grocery</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Grocery]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Grocery</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Wholesale customers data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>430</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Wholesale customers data_0428F17670C743DAB3D8609A0A8B0103]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Frozen</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Frozen]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Frozen</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Wholesale customers data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>426</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Wholesale customers data_0428F17670C743DAB3D8609A0A8B0103]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Detergents_Paper</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Detergents_Paper]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Detergents_Paper</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Wholesale customers data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>417</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Wholesale customers data_0428F17670C743DAB3D8609A0A8B0103]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Delicassen</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Delicassen]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Delicassen</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Wholesale customers data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>403</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Wholesale customers data_0428F17670C743DAB3D8609A0A8B0103]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' palette='color_blind_10_0' type='palette'>
+            <map to='#1170aa'>
+              <bucket>&quot;[federated.156c7eq0v6q7gm179ef190963y9w].[__tableau_internal_object_id__].[cnt:Wholesale customers data_0428F17670C743DAB3D8609A0A8B0103:qk]&quot;</bucket>
+            </map>
+            <map to='#57606c'>
+              <bucket>&quot;[federated.156c7eq0v6q7gm179ef190963y9w].[sum:Frozen:qk]&quot;</bucket>
+            </map>
+            <map to='#5fa2ce'>
+              <bucket>&quot;[federated.156c7eq0v6q7gm179ef190963y9w].[sum:Grocery:qk]&quot;</bucket>
+            </map>
+            <map to='#a3acb9'>
+              <bucket>&quot;[federated.156c7eq0v6q7gm179ef190963y9w].[sum:Fresh:qk]&quot;</bucket>
+            </map>
+            <map to='#c85200'>
+              <bucket>&quot;[federated.156c7eq0v6q7gm179ef190963y9w].[sum:Milk:qk]&quot;</bucket>
+            </map>
+            <map to='#fc7d0b'>
+              <bucket>&quot;[federated.156c7eq0v6q7gm179ef190963y9w].[sum:Detergents_Paper:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Indonesia&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Wholesale customers data' id='Wholesale customers data_0428F17670C743DAB3D8609A0A8B0103'>
+            <properties context=''>
+              <relation connection='excel-direct.0f8aoni0k5obht1fec9cm1i0onwq' name='Wholesale customers data' table='[&apos;Wholesale customers data$&apos;]' type='table'>
+                <columns gridOrigin='A1:H441:no:A1:H441:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='Channel' ordinal='0' />
+                  <column datatype='integer' name='Region' ordinal='1' />
+                  <column datatype='integer' name='Fresh' ordinal='2' />
+                  <column datatype='integer' name='Milk' ordinal='3' />
+                  <column datatype='integer' name='Grocery' ordinal='4' />
+                  <column datatype='integer' name='Frozen' ordinal='5' />
+                  <column datatype='integer' name='Detergents_Paper' ordinal='6' />
+                  <column datatype='integer' name='Delicassen' ordinal='7' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Perbandingan Pengeluaran Per Kategori Produk</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Wholesale customers data (Wholesale customers data)' name='federated.156c7eq0v6q7gm179ef190963y9w' />
+          </datasources>
+          <datasource-dependencies datasource='federated.156c7eq0v6q7gm179ef190963y9w'>
+            <column caption='Detergents Paper' datatype='integer' name='[Detergents_Paper]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Fresh]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Frozen]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Grocery]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Milk]' role='measure' type='quantitative' />
+            <column caption='Wholesale customers data' datatype='table' name='[__tableau_internal_object_id__].[Wholesale customers data_0428F17670C743DAB3D8609A0A8B0103]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Wholesale customers data_0428F17670C743DAB3D8609A0A8B0103]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Wholesale customers data_0428F17670C743DAB3D8609A0A8B0103:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Detergents_Paper]' derivation='Sum' name='[sum:Detergents_Paper:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Fresh]' derivation='Sum' name='[sum:Fresh:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Frozen]' derivation='Sum' name='[sum:Frozen:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Grocery]' derivation='Sum' name='[sum:Grocery:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Milk]' derivation='Sum' name='[sum:Milk:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.156c7eq0v6q7gm179ef190963y9w].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.156c7eq0v6q7gm179ef190963y9w].[__tableau_internal_object_id__].[cnt:Wholesale customers data_0428F17670C743DAB3D8609A0A8B0103:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.156c7eq0v6q7gm179ef190963y9w].[sum:Detergents_Paper:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.156c7eq0v6q7gm179ef190963y9w].[sum:Fresh:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.156c7eq0v6q7gm179ef190963y9w].[sum:Frozen:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.156c7eq0v6q7gm179ef190963y9w].[sum:Grocery:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.156c7eq0v6q7gm179ef190963y9w].[sum:Milk:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.156c7eq0v6q7gm179ef190963y9w].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.156c7eq0v6q7gm179ef190963y9w].[:Measure Names]' />
+              <lod column='[federated.156c7eq0v6q7gm179ef190963y9w].[Multiple Values]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.156c7eq0v6q7gm179ef190963y9w].[Multiple Values]</rows>
+        <cols>[federated.156c7eq0v6q7gm179ef190963y9w].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{E242FC4E-309E-499A-9094-183958E18B57}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Segmentasi Pelanggan Berdasarkan Region dan Channel</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Wholesale customers data (Wholesale customers data)' name='federated.156c7eq0v6q7gm179ef190963y9w' />
+          </datasources>
+          <datasource-dependencies datasource='federated.156c7eq0v6q7gm179ef190963y9w'>
+            <column caption='Total Spend' datatype='integer' name='[Calculation_107523469795966976]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Fresh] + [Milk] + [Grocery] + [Frozen] + [Detergents_Paper] + [Delicassen]' />
+            </column>
+            <column aggregation='Sum' caption='Channel (copy)' datatype='integer' name='[Channel (copy)_107523469796573186]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='[Channel]' />
+            </column>
+            <column datatype='integer' name='[Channel]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Delicassen]' role='measure' type='quantitative' />
+            <column caption='Detergents Paper' datatype='integer' name='[Detergents_Paper]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Fresh]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Frozen]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Grocery]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Milk]' role='measure' type='quantitative' />
+            <column aggregation='Sum' caption='Region (copy)' datatype='integer' name='[Region (copy)_107523469796327425]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='[Region]' />
+            </column>
+            <column datatype='integer' name='[Region]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_107523469795966976]' derivation='Count' name='[cnt:Calculation_107523469795966976:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Channel]' derivation='Count' name='[cnt:Channel:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Channel (copy)_107523469796573186]' derivation='None' name='[none:Channel (copy)_107523469796573186:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Region (copy)_107523469796327425]' derivation='None' name='[none:Region (copy)_107523469796327425:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.156c7eq0v6q7gm179ef190963y9w].[none:Region (copy)_107523469796327425:ok]' />
+              <size column='[federated.156c7eq0v6q7gm179ef190963y9w].[cnt:Calculation_107523469795966976:qk]' />
+              <text column='[federated.156c7eq0v6q7gm179ef190963y9w].[cnt:Channel:qk]' />
+              <text column='[federated.156c7eq0v6q7gm179ef190963y9w].[none:Channel (copy)_107523469796573186:ok]' />
+              <lod column='[federated.156c7eq0v6q7gm179ef190963y9w].[cnt:Channel:qk]' />
+              <lod column='[federated.156c7eq0v6q7gm179ef190963y9w].[none:Region (copy)_107523469796327425:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{52FBFE25-733B-4AEA-97D7-1E8C49EA2E4F}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.156c7eq0v6q7gm179ef190963y9w].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.156c7eq0v6q7gm179ef190963y9w].[:Measure Names]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{FDDD154D-B402-4D8C-B010-7CA63E7DF322}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.156c7eq0v6q7gm179ef190963y9w].[none:Region (copy)_107523469796327425:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.156c7eq0v6q7gm179ef190963y9w].[none:Channel (copy)_107523469796573186:ok]</field>
+            <field>[federated.156c7eq0v6q7gm179ef190963y9w].[none:Region (copy)_107523469796327425:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{3E636A59-BF05-4E0A-87DC-FAC59AE29DE1}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAE+klEQVR4nO3ZT1MbdQDG8Wc3SxJiQBBIgWHaEadeHGaKf056dPQt+I48+iJ8GU5nWme8
+      1j91tLV1RrEKFAKFhPwhu6yHjrUUghxMfiHP93Mhs6fnkG/47W6U53kuwFQcegAQEgHAGgHA
+      WvLqheadO+o+/CXEFoyJ5PoNfdmeDT3jUs4E0P35gY7ufh1iC8bExPq7+upgJfSMS+EIBGsX
+      BhBXq4qKRUl68VeFgpSc+ccBnKs4UdDsVFlJIValNKHSRCH0pFP6BhBVKkqWl1Vev6VkaUmV
+      jz6UJE2u31JxdXVoA3G1ra3WNDs1qZlqWWtv1XRzZS70pFP6BpC3WlKaKtvZUbq5qWx/X5Ke
+      3yBn2dAG4mrbO2xr8Y2q5qYnVS4mGrX3rn0DSBYXldQWlDWaKszOKpmfVzw9rWRpUcm1mhRz
+      +4D/dpLnetZoK89z/b51oGzEAuh7mM/qdXXTVHmvJ2WZ2t9+pzxNldX3lO3tD3MjrrCtelOV
+      8oSeNTqaqZb1V70XetIpfQPIez1lu7v/Xmg2JUlZqzXwURgf3V6mbu/5kXm/2Qm85izOMbDW
+      /ylQqajqp58onpoa5h6MmZWFaX383puhZ/TV/ylQ91jHjx5LUTTMPRgzT3YOR/Lo84+Lj0CF
+      gqLCaL24wNUSx5EKcTyyv6MXvgiLyyUV5ueHuQdjZmVhWt3jVPOvV0JPOVf/p0Ctljr3fxzm
+      Foyhje0DbWwfhJ7RF0+BYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0A
+      YI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0A
+      YI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0A
+      YI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0A
+      YI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0A
+      YI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0AYI0A
+      YI0AYI0AYI0AYI0AYI0AYI0AYI0AYC0JPQDjJ4qk67Xp0DMuhQDwvyso0+fVL0LPuBQCwEDk
+      jc3QEy6FewBYIwAM1NNGqtsPm2odn+jeRls/bXZCTzqFADBQ6Umud5ZK+ubXI+0epUriKPSk
+      UwgAAxVJ+v5JRx/cqGi/lWnrMA096RQCwEDdfXSkXNJOM1UcSfGIfeN4CoSB+uz9mRefb9ZK
+      AZecb8R6BIaLADBQJ3mu7cZonftfRgAYqMdPj3X7QSP0jL4IAAP19rWS5l4b3VtNAsBA/fBn
+      W/f+aOu3+nHoKeca3TQxFtaWy1pbLoee0RcBYKCiaLTe/L6KIxCsEQCsEQCsEQCsEQCsEQCs
+      EQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCs
+      EQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCs
+      EQCsEQCsEQCsRXme5y9fyBoN5Z1OqD0YA1GxqCg6Cj3jUv4GXfbbe2NWEKIAAAAASUVORK5C
+      YII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
